@@ -1,0 +1,70 @@
+memo
+ dev
+  vm
+   vagrant
+    vagrant init fail
+     ###################
+     The provider 'virtualbox' that was requested to back the machine
+     'default' is reporting that it isn't usable on this system. The
+     reason is shown below:
+     
+     Vagrant has detected that you have a version of VirtualBox installed
+     that is not supported by this version of Vagrant. Please install one of
+     the supported versions listed below to use Vagrant:
+     
+     4.0, 4.1, 4.2, 4.3, 5.0, 5.1, 5.2, 6.0
+     
+     A Vagrant update may also be available that adds support for the version
+     you specified. Please check www.vagrantup.com/downloads.html to download
+     the latest version.
+     ###################
+     =>VirtualBox Version 6.0 only...
+      =>reinstall
+
+
+不要な Vagrant 仮想マシンを削除する (vagrant destroy)
+https://maku77.github.io/vagrant/destroy-vm.html
+
+同名のvmがあって起動できないといわれたら
+https://qiita.com/you-me/items/73f1afc9e8d00d891e1d
+
+“～already exists.”が表示されてVagrant up出来ない時にやったこと
+https://www.saaria.info/archives/2924
+
+=>vb.gui = falseにする
+
+
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:348: starting container process caused "process_linux.go:297: copying bootstrap data to pipe caused \"write init-p: broken pipe\"": unknown.
+
+やってみた ← 「VagrantとDockerについて名前しか知らなかったので試した」
+https://qiita.com/cs8/items/ab8206ef4e97bb2a5bae
+
+ubuntu 14.04上で、要求するライブラリのバージョンなどを異にする幾つかの解析ソフトを併存させるため、dockerを導入しようとしています。
+https://forums.ubuntulinux.jp/viewtopic.php?pid=120508
+
+=>config.vm.box = "ubuntu/xenial64"にする
+
+
+
+==> default: VM not created. Moving on...
+vagrant global-statusに表示される削除済みVMを一覧から消す
+https://qiita.com/shyse/items/d64dae496b5e12dd28a3
+
+vagrant global-status --prune
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
